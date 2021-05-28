@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RadioCalculator</string>
+    <string name="add">Add</string>
+    <string name="subtract">Subtract</string>
+    <string name="multiply">Multiply</string>
+    <string name="divide">Divide</string>
+    <string name="number_1">Number 1</string>
+    <string name="number_2">Number 2</string>
+    <string name="result">Result</string>
+    <string name="clear">Clear</string>
+</resources>

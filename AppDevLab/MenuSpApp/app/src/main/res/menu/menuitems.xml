@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/itMyapp"
+    android:title="My App"
+    app:showAsAction="never" />
+    <item android:id="@+id/itSelfie"
+        android:title="Selfie"
+        app:showAsAction="never" />
+    <item android:id="@+id/itExit"
+        android:title="Exit"
+        app:showAsAction="never" />
+    <item android:id="@+id/itControl"
+        android:title="Controls"
+        app:showAsAction="never" />
+    <item android:id="@+id/itRingtone"
+        android:title="Ringtone"
+        app:showAsAction="never" />
+
+
+
+</menu>

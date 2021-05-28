@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2e1c80">
+
+    <TextView
+        android:id="@+id/tvp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P1 = 0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="#29eb1e"/>
+
+    <TextView
+        android:id="@+id/tvp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P2 = 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvp1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="#f7f705"/>
+    <ImageView
+        android:id="@+id/imgDice"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:srcCompat="@drawable/fulldice"
+        app:layout_constraintTop_toBottomOf="@id/tvp1"
+        app:layout_constraintBottom_toTopOf="@id/btnRoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"
+        />
+
+    <Button
+        android:id="@+id/btnRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#08DAF4"
+        android:text="P1 Roll"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgDice"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRoll"
+        app:layout_constraintVertical_bias="0.9"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#ff0000"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
